@@ -21,7 +21,8 @@
     "now:alias": "now alias",
     "now": "npm run now:deploy && npm run now:alias",
     "posttest": "npm run lint && nsp check",
-    "start": "node ."
+    "start": "node .",
+    "build": "node ."
   },
   "dependencies": {
     "compression": "^1.0.3",
