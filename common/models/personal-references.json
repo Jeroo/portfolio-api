@@ -1,0 +1,42 @@
+{
+  "name": "personalReferences",
+  "plural": "personalReferences",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "default": "photo"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "idapplicant": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

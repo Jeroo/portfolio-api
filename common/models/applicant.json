@@ -50,7 +50,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "education": {
+      "type": "hasMany",
+      "model": "education",
+      "foreignKey": "idapplicant"
+    }
+  },
   "acls": [],
   "methods": {}
 }

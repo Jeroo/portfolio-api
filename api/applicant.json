@@ -1,42 +1,47 @@
 {
-  "name": "education",
-  "plural": "educations",
+  "name": "applicant",
+  "plural": "applicants",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "institutionname": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "gpa": {
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "identification_number": {
       "type": "string"
     },
-    "program": {
-      "type": "string",
-      "required": true
-    },
-    "decription": {
+    "address": {
       "type": "string"
     },
-    "dateto": {
-      "type": "date",
-      "required": true
-    },
-    "datefrom": {
-      "type": "date",
-      "required": true
-    },
-    "iscurrent": {
-      "type": "boolean",
-      "required": true,
-      "default": false
-    },
-    "idapplicant": {
+    "phone": {
       "type": "string",
       "required": true
+    },
+    "age": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "photo_profile": {
+      "type": "string",
+      "required": true
+    },
+    "profile_description": {
+      "type": "string",
+      "required": true
+    },
+    "interests": {
+      "type": "string"
     },
     "status": {
       "type": "boolean",
@@ -45,13 +50,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "applicant": {
-      "type": "belongsTo",
-      "model": "applicant",
-      "foreignKey": "idapplicant"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

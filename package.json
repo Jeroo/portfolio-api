@@ -5,10 +5,24 @@
   "engines": {
     "node": ">=6"
   },
+  "now": {
+    "name": "portfolio",
+    "alias": [
+      "portfolio-api-v01.now.sh"
+    ],
+    "env": {
+      "MONGODB_URL": "@lbmongo",
+      "NODE_ENV": "production"
+    }
+  },
   "scripts": {
     "lint": "eslint .",
+    "now:deploy": "now",
+    "now:alias": "now alias",
+    "now": "npm run now:deploy && npm run now:alias",
+    "posttest": "npm run lint && nsp check",
     "start": "node .",
-    "posttest": "npm run lint"
+    "build": "node ."
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -22,6 +36,7 @@
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
+    "@now/node": "^1.4.1",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0"
   },
