@@ -1,0 +1,13 @@
+{
+  "db": {
+    "host": "cluster0-olkra.mongodb.net",
+    "port": 27017,
+    "url": "mongodb+srv://jeromongo:jDL3jRyLaOLXcpna@cluster0-olkra.mongodb.net/test?retryWrites=true&w=majority",
+    "database": "db_portfolio",
+    "password": "jDL3jRyLaOLXcpna",
+    "name": "db_portfolio",
+    "user": "jeromongo",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "applicant",
+  "plural": "applicants",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "identification_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "photo_profile": {
+      "type": "string",
+      "required": true
+    },
+    "profile_description": {
+      "type": "string",
+      "required": true
+    },
+    "interests": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

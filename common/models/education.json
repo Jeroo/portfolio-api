@@ -1,0 +1,51 @@
+{
+  "name": "education",
+  "plural": "educations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "institutionname": {
+      "type": "string",
+      "required": true
+    },
+    "gpa": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string",
+      "required": true
+    },
+    "decription": {
+      "type": "string"
+    },
+    "dateto": {
+      "type": "date",
+      "required": true
+    },
+    "datefrom": {
+      "type": "date",
+      "required": true
+    },
+    "iscurrent": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "idapplicant": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

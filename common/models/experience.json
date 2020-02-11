@@ -1,0 +1,48 @@
+{
+  "name": "experience",
+  "plural": "experiences",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "companyname": {
+      "type": "string",
+      "required": true
+    },
+    "decription": {
+      "type": "string"
+    },
+    "dateto": {
+      "type": "date",
+      "required": true
+    },
+    "datefrom": {
+      "type": "date",
+      "required": true
+    },
+    "iscurrent": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "idapplicant": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
